@@ -1,0 +1,12 @@
+<mvc:View 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m" 
+    displayBlock="true">
+	<Shell>
+		<App>
+			<Page title="Teste" backgroundDesign="Solid">
+				
+			</Page>
+		</App>
+	</Shell>
+</mvc:View>

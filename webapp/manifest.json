@@ -1,0 +1,20 @@
+{
+	"sap.app": {
+		"id": "meta.training.example",
+		"type": "application"
+	},
+	"sap.ui5": {
+		"dependencies": {
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"rootView": {
+			"viewName": "meta.training.example.view.App",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		}
+	}
+}
