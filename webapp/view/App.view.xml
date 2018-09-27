@@ -1,11 +1,25 @@
 <mvc:View 
     xmlns:mvc="sap.ui.core.mvc" 
-    xmlns="sap.m" 
+    xmlns="sap.m"
+    controllerName="meta.training.example.controller.App" 
     displayBlock="true">
 	<Shell>
 		<App>
 			<Page title="Teste" backgroundDesign="Solid">
-				
+				<content>
+					<List id="todoList"
+						items="{TodoModel>/}"
+						mode="MultiSelect"
+						growing="true"
+						growingScrollToLoad="true"
+						showNoData="false"
+						showSeparators="None"
+						rememberSelections="false">
+						<CustomListItem selected="{TodoModel>completed}">
+							<Input enabled="{=!${TodoModel>completed}}" value="{TodoModel>todo}"/>
+						</CustomListItem>
+					</List>
+				</content>
 			</Page>
 		</App>
 	</Shell>
