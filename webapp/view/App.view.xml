@@ -5,7 +5,11 @@
     displayBlock="true">
 	<Shell>
 		<App>
-			<Page title="Teste" backgroundDesign="Solid">
+			<Page title="Todo" backgroundDesign="Solid">
+				<headerContent>
+					<ToolbarSpacer />
+					<Button text="Add Todo" press="onAddTodo" />
+				</headerContent>
 				<content>
 					<List id="todoList"
 						items="{TodoModel>/}"
