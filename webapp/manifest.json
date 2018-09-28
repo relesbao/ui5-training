@@ -15,6 +15,36 @@
 			"type": "XML",
 			"async": true,
 			"id": "app"
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "meta.training.example.view",
+				"controlId": "todoContainerId",
+				"controlAggregation": "pages",
+				"async": true
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "home",
+					"target": "home"
+				},
+				{
+					"pattern": "form",
+					"name": "form",
+					"target": "form"
+				}
+			],
+			"targets": {
+				"home": {
+					"viewName": "Home"
+				},
+				"form": {
+					"viewName": "Form"
+				}
+			}
 		}
 	}
 }
